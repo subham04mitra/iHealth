@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>iHealth:care for you</title>
+
+    <style>
+        body {
+            background-image: url("5.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="iHealth-Logo.png" width="50" height="50"></a>
+            </li>
+
+            <a class="navbar-brand" href="#" style="color:rgb(238, 224, 24)">iHealth</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-outline-warning">Submit</button>
+                    <a class="btn btn-secondary" href="" role="button" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</a>
+                    <a class="btn btn-secondary" href="signup.html" role="button">Signup</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Your Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <style>
+        form {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+    <form>
+        <label for="fname" style="color:rgb(13, 9, 248)">NAME:</label><br>
+        <input type="text" value="Sample Name" id="fname" Your Name name="fname" readonly><br>
+
+        <label for="address" style="color:rgb(13, 9, 248)">ADDRESS:</label><br>
+        <input type="text" value="Sample Address" id="address" name="address" readonly><br>
+
+        <label for="age" style="color:rgb(13, 9, 248)">DATE OF BIRTH:</label><br>
+        <input type="text" value="01/01/00" id="age" name="age" readonly><br>
+        <br>
+    </form>
+
+    <div>
+        <h1><button class="btn btn-secondary" type="submit">Choose the Problems</button></h1>
+        <select class="select" data-mdb-filter="true">
+            <option value="0">None
+            </option>
+            <option value="1">acidity
+            </option>
+            <option value="2">back_pain
+            </option>
+            <option value="3">bladder_discomfort
+            </option>
+            <option value="4">breathlessness
+            </option>
+            <option value="5">burning_micturition
+            </option>
+            <option value="6">chest pain
+            </option>
+            <option value="7">chills
+            </option>
+            <option value="8">constipation
+            </option>
+            <option value="9">continous_sneezing
+            </option>
+            <option value="10">cough
+            </option>
+            <option value="11">cramps
+            </option>
+            <option value="12">fatigue
+            </option>
+            <option value="13">headache
+            </option>
+            <option value="14">high fever
+            </option>
+            <option value="15">indegestion
+            </option>
+            <option value="16">itching
+            </option>
+            <option value="17">joint pains
+            </option>
+            <option value="18">mood_swings
+            </option>
+            <option value="19">muscle_wastings
+            </option>
+            <option value="20">muscle_weakness
+            </option>
+            <option value="21">neck_pain
+            </option>
+            <option value="22">pain_during_bowl_movement
+            </option>
+            <option value="23">patches_in_throat
+            </option>
+            <option value="24">pus_filled_pimples
+            </option>
+            <option value="25">shivering
+            </option>
+            <option value="26">skin_rash
+            </option>
+            <option value="27">stiff_neck
+            </option>
+            <option value="28">stomach_pain
+            </option>
+            <option value="29">sunken_eyes
+            </option>
+            <option value="30">vomiting
+            </option>
+            <option value="31">weakness_in_limbs
+            </option>
+            <option value="32">weight_gain
+            </option>
+            <option value="33">weight_loss
+            </option>
+            <option value="34">yellowish_skin
+            </option>
+
+        </select>
+        </select>
+        <select class="select" data-mdb-filter="true">
+            <option value="0">None</option>
+            <option value="1">abdonimal_pain</option>
+            <option value="2">acidity</option>
+            <option value="3">anxiety</option>
+            <option value="4">Blackheads</option>
+            <option value="5">bladder_discomfort</option>
+            <option value="6">blister</option>
+            <option value="7">breathlessness</option>
+            <option value="8">bruising</option>
+            <option value="9">chest pain</option>
+            <option value="10">chills</option>
+            <option value="11">cold_hands_and_feets</option>
+            <option value="12">cough</option>
+            <option value="13">cramps</option>
+            <option value="14">dehydration</option>
+            <option value="15">dizziness</option>
+            <option value="16">fatigue</option>
+            <option value="17">foul_smell_of_urine</option>
+            <option value="18">headache</option>
+            <option value="19">high fever</option>
+            <option value="20">indegestion</option>
+            <option value="21">joint_pain</option>
+            <option value="22">knee_pain</option>
+            <option value="23">lathergy</option>
+            <option value="24">loss of_appetite</option>
+            <option value="25">mood swings</option>
+            <option value="26">nausea</option>
+            <option value="27">neck_pain</option>
+            <option value="28">nodal_skin_eruptions</option>
+            <option value="29">pain_during_bowl movement</option>
+            <option value="30">pain_in_anal region</option>
+            <option value="31">patches_in_throat</option>
+            <option value="32">pus_filled_pimples</option>
+            <option value="33">restlessness</option>
+            <option value="34">shivering</option>
+            <option value="35">skin_peeling</option>
+            <option value="36">skin_rash</option>
+            <option value="37">stiff_neck</option>
+            <option value="38">stomach pain</option>
+            <option value="39">sunken eyes</option>
+            <option value="40">indegestion</option>
+            <option value="41">swelling joints</option>
+            <option value="42">ulcers on toungue</option>
+            <option value="43">vommiting</option>
+            <option value="44">weakness_in_limbs</option>
+            <option value="45">weight_gain</option>
+            <option value="46">weight_loss</option>
+            <option value="47">yellowish_skin</option>
+
+        </select>
+        <select class="select" data-mdb-filter="true">
+            <option value="0">None</option>
+            <option value="1">abdonomial_pain</option>
+            <option value="2">alerted_sensorium</option>
+            <option value="3">anxiety</option>
+            <option value="4">blackhead</option>
+            <option value="5">blisters</option>
+            <option value="6">bloody_stool</option>
+            <option value="7">blood_and_distorted_vision</option>
+            <option value="8">breathlessness</option>
+            <option value="9">bruising</option>
+            <option value="10">chest pain</option>
+            <option value="11">cold_hands_and_feets</option>
+            <option value="12">continous_feel of urine</option>
+            <option value="13">cough</option>
+            <option value="14">dark_urine</option>
+            <option value="15">dehydration</option>
+            <option value="16">diarrohea</option>
+            <option value="17">dischronic_patches</option>
+            <option value="18">dizziness</option>
+            <option value="19">extra_marital_coontacts</option>
+            <option value="20">fatigue</option>
+            <option value="21">foul_smell_of_urine</option>
+            <option value="22">headache</option>
+            <option value="23">high fever</option>
+            <option value="24">heap_joint_pain</option>
+            <option value="25">joint_pain</option>
+            <option value="26">knee_pain</option>
+            <option value="27">lathergy</option>
+            <option value="28">loss_of_appetite</option>
+            <option value="29">loss_of_balance</option>
+            <option value="30">mood_swings</option>
+            <option value="31">nausea</option>
+            <option value="32">neck_pain</option>
+            <option value="33">nodal_skin_eruptions</option>
+            <option value="34">obesity</option>
+            <option value="35">pain_in_anal_region</option>
+            <option value="36">red_sore_around_nose</option>
+            <option value="37">restlessness</option>
+            <option value="38">scurring</option>
+            <option value="39">silver_like_dusting</option>
+            <option value="40">skin_pilling</option>
+            <option value="41">spining_movement</option>
+            <option value="42">stomach_pain</option>
+            <option value="43">sweating</option>
+            <option value="44">swelling_joints_stomach</option>
+            <option value="45">ulcers_on_tongue</option>
+            <option value="46">vommiting</option>
+            <option value="47">watering_from_eyes</option>
+            <option value="48"> </option>
+            <option value="49">weight_loss</option>
+            <option value="50">yellowish_skin</option>
+
+        </select>
+        
+        <select class="select" data-mdb-filter="true">
+            <option value="1">None</option>
+            <option value="1">abdomial_pain</option>
+            <option value="2">alerted_sensorium</option>
+            <option value="3">bloody_stool</option>
+            <option value="4">blurred_distorted_vision</option>
+            <option value="5">breathlessness</option>
+            <option value="6">burning_micturion</option>
+            <option value="7">chest pain</option>
+            <option value="8">continous_feel_of_urine</option>
+            <option value="9">cough</option>
+            <option value="10">dark_urine</option>
+            <option value="11">diarrohea</option>
+            <option value="12">dischronic_patches</option>
+            <option value="13">distention_of_abdomen</option>
+            <option value="14">dizziness</option>
+            <option value="15">excessive hunger</option>
+            <option value="16">extra_marital_activity</option>
+            <option value="17">family_ history</option>
+            <option value="18">fatigue</option>
+            <option value="19">headache</option>
+            <option value="20">high_fever</option>
+            <option value="21">hip_joint_money</option>
+            <option value="22">irregular_sugar_level</option>
+            <option value="23">irritation_in_anus</option>
+            <option value="24">lack_of_concentration</option>
+            <option value="25">lethargy</option>
+            <option value="26">loss_of_appetite</option>
+            <option value="27">loss_of_balance</option>
+            <option value="28">mood_swings</option>
+            <option value="29">movement_stiffiness</option>
+            <option value="30">nausea</option>
+            <option value="31">painful_walking</option>
+            <option value="32">passege_of_gases</option>
+            <option value="33">red_sore_around_nose</option>
+            <option value="34">restlessness</option>
+            <option value="35">scurring</option>
+            <option value="36">silver_like_dusting</option>
+            <option value="37">small_dents_in_nails</option>
+            <option value="38">spinning_movements</option>
+            <option value="39">spotting_urination</option>
+            <option value="40">swollen_legs</option>
+            <option value="41">vomiting</option>
+            <option value="42">watering_from_eyes</option>
+            <option value="43">weight_loss</option>
+            <option value="44">yellowing_of_eye</option>
+            <option value="45">yellowish_skin</option>
+
+
+
+        </select>
+        <select class="select" data-mdb-filter="true">
+            <option value="1">None</option>
+            <option value="1">abdominal_pain</option>
+            <option value="2">blurred_distorted_vision</option>
+            <option value="3">breathlessness</option>
+            <option value="4">chest pain</option>
+            <option value="5">cough</option>
+            <option value="6">dark_urine</option>
+            <option value="7">diarrohea</option>
+            <option value="8">distention_of_abdomen</option>
+            <option value="9">dizziness</option>
+            <option value="10">excessive hunger</option>
+            <option value="11">family history </option>
+            <option value="12">fatigue</option>
+            <option value="13">headache</option>
+            <option value="14">high fever</option>
+            <option value="15">history_of_alcohol_consumptions</option>
+            <option value="16">inflammatory_nails</option>
+            <option value="17">internal itiching</option>
+            <option value="18">irregular_sugar_level</option>
+            <option value="19">irritation_in_anus</option>
+            <option value="20">lack_of_concentration</option>
+            <option value="21">lethargy</option>
+            <option value="22">loss_of_appetite</option>
+            <option value="23">loss_of_balance</option>
+            <option value="24">mucoid_sputum</option>
+            <option value="25">nausea</option>
+            <option value="26">painful walking</option>
+            <option value="27">pessage_of_gases</option>
+            <option value="28">small_dents_in_nails</option>
+            <option value="29">spotting_urination</option>
+            <option value="30">stiff_neck</option>
+            <option value="31">sweating</option>
+            <option value="32">swelling joints</option>
+            <option value="33">swollen blood vessels</option>
+            <option value="34">swollen legs</option>
+            <option value="35">unsteadiness</option>
+            <option value="36">yellow_crust_ooze</option>
+            <option value="37">yellowing_of_eyes</option>
+            <option value="38">yellowish skin</option>
+
+        </select>
+        <select class="select" data-mdb-filter="true">
+            <option value="1">None</option>
+            <option value="1">abdominal_pain</option>
+            <option value="2"> blurred_distorted_vision</option>
+            <option value="3">breathlessness</option>
+            <option value="4">chest pain</option>
+            <option value="5">constipation</option>
+            <option value="6">dark_urine</option>
+            <option value="7">depression</option>
+            <option value="8">diarrohea</option>
+            <option value="9">dizziness</option>
+            <option value="10">family history</option>
+            <option value="11">fast_heart_rate</option>
+            <option value="12">fluid_overload</option>
+            <option value="13">headache</option>
+            <option value="14">high fever</option>
+            <option value="15">history_of_alcohol_consumptions</option>
+            <option value="16">inflamatory_nails</option>
+            <option value="17">internal itiching</option>
+            <option value="18">irregular_sugar_level</option>
+            <option value="19">irrition_in_anus</option>
+            <option value="20">lack_of_concentration</option>
+            <option value="21">lethargy</option>
+            <option value="22">loss_of_appetite</option>
+            <option value="23">loss_of_balance</option>
+            <option value="24">mucoid_sputum</option>
+            <option value="25">nausea</option>
+            <option value="26">painful_walking</option>
+            <option value="27">passege_of_gases</option>
+            <option value="28">small_dents_in_nails</option>
+            <option value="29">spotting urination</option>
+            <option value="30">stiff_neck</option>
+            <option value="31">sweating</option>
+            <option value="32">swelling joints</option>
+            <option value="33">swollen blood vessels</option>
+            <option value="34">unsteadiness</option>
+            <option value="35">yellow_crust_ooze</option>
+            <option value="36">yellowing_of_eyes</option>
+            <option value="37">yeelowish skin</option>
+
+        </select>
+        <select class="select" data-mdb-filter="true">
+            <option value="1">None</option>
+            <option value="1">abdominal_pain</option>
+            <option value="2"> blurred_distorted_vision</option>
+            <option value="3">breathlessness</option>
+            <option value="4">chest pain</option>
+            <option value="5">constipation</option>
+            <option value="6">dark_urine</option>
+            <option value="7">depression</option>
+            <option value="8">diarrohea</option>
+            <option value="9">dizziness</option>
+            <option value="10">family history</option>
+            <option value="11">fast_heart_rate</option>
+            <option value="12">fluid_overload</option>
+            <option value="13">headache</option>
+            <option value="14">high fever</option>
+            <option value="15">history_of_alcohol_consumptions</option>
+            <option value="16">inflamatory_nails</option>
+            <option value="17">internal itiching</option>
+            <option value="18">irregular_sugar_level</option>
+            <option value="19">irrition_in_anus</option>
+            <option value="20">lack_of_concentration</option>
+            <option value="21">lethargy</option>
+            <option value="22">loss_of_appetite</option>
+            <option value="23">loss_of_balance</option>
+            <option value="24">mucoid_sputum</option>
+            <option value="25">nausea</option>
+            <option value="26">painful_walking</option>
+            <option value="27">passege_of_gases</option>
+            <option value="28">small_dents_in_nails</option>
+            <option value="29">spotting urination</option>
+            <option value="30">stiff_neck</option>
+            <option value="31">sweating</option>
+            <option value="32">swelling joints</option>
+            <option value="33">swollen blood vessels</option>
+            <option value="34">unsteadiness</option>
+            <option value="35">yellow_crust_ooze</option>
+            <option value="36">yellowing_of_eyes</option>
+            <option value="37">yeelowish skin</option>
+
+        </select>
+        <select class="select" data-mdb-filter="true">
+            <option value="1">None</option>
+            <option value="1">abdominal pain</option>
+            <option value="2">blurred_distorted_vision</option>
+            <option value="3">breathlessness</option>
+            <option value="4">constipation</option>
+            <option value="5">dark_urine</option>
+            <option value="6">deprresion</option>
+            <option value="7">diarrohea</option>
+            <option value="8">enlarged_thyroid</option>
+            <option value="9">fast_heart_rate</option>
+            <option value="10">fluid_overload</option>
+            <option value="11">headache</option>
+            <option value="12">irritability</option>
+            <option value="13">loss_of_appetite</option>
+            <option value="14">malaise</option>
+            <option value="15">mild_fever</option>
+            <option value="16">nausea</option>
+            <option value="17">obesity</option>
+            <option value="18">phelgm</option>
+            <option value="19">prominent_veins_on_calf</option>
+            <option value="20">puffy_face_and_eyes</option>
+            <option value="21">sweating</option>
+            <option value="22">swelled_lymph_nodes</option>
+            <option value="23">yellow_urine</option>
+            <option value="24">yellowing_of_eyes</option>
+
+        </select>
+        <select class="select" data-mdb-filter="true">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6">Six</option>
+            <option value="7">Seven</option>
+            <option value="8">Eight</option>
+            <option value="9">Nine</option>
+            <option value="10">Ten</option>
+        </select>
+        <h1><button class="btn btn-secondary" type="submit">Upload Test Reports(If Any)</button></h1>
+        <div style="width:800px; margin:0 auto;" class="mb-3">
+            <label for="formFile" class="form-label">Upload in JPG/JPEG/PNG Format</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <h1><button class="btn btn-success" type="submit">Submit</button></h1>
+    </div>
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="text-muted">© 2022 TROJAN , iHEALTH</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <a class="navbar-brand" href="#">
+                <img src="facebook.svg" alt="" width="30" height="24">
+            </a>
+        </ul>
+    </footer>
+</div>
+
+</html>
